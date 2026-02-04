@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Typography */
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Components */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-[#EECA44] text-[#5F5FA2] font-semibold rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-[#3F8A4B] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-[#3F8A4B] text-[#3F8A4B] font-semibold rounded-lg hover:bg-[#3F8A4B] hover:text-white transition-colors;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-[#5F5FA2];
+    font-family: 'Playfair Display', serif;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed;
+  }
+
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+}
