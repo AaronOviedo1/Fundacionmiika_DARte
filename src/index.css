@@ -6,12 +6,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fredoka', sans-serif;
   font-weight: 700;
 }
 
 .font-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 /* Custom Components */
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .section-title {
     @apply text-4xl md:text-5xl font-bold text-[#5F5FA2];
-    font-family: 'Playfair Display', serif;
+    font-family: 'Fredoka', sans-serif;
   }
 
   .section-subtitle {

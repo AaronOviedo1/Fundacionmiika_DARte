@@ -52,7 +52,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
+        display: ['Fredoka', 'sans-serif'],
         sans: ['Poppins', 'system-ui', 'sans-serif'],
       },
     },
