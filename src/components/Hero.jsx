@@ -60,7 +60,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <a href="#contacto" className="btn-primary flex items-center justify-center gap-2 group text-lg">
+              <a href="#contacto" className="btn-primary hidden md:flex items-center justify-center gap-2 group text-lg">
                 Visita el Museo
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -89,10 +89,10 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative hidden lg:block"
+            className="relative"
           >
             <motion.div
-              className="relative h-96"
+              className="relative h-96 sm:h-80 md:h-96"
               whileHover={{ scale: 1.02 }}
               transition={{ type: 'spring', stiffness: 300 }}
             >
