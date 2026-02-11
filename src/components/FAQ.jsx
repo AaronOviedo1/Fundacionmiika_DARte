@@ -1,93 +1,13 @@
 import { motion } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0)
+  const { t } = useTranslation()
 
-  const faqs = [
-    {
-      category: 'Sobre el Museo',
-      questions: [
-        {
-          q: '¿Cuál es el costo de entrada al museo?',
-          a: 'El acceso a DARte es gratuito para propósitos educativos. Contáctanos para información sobre tours grupales o eventos especiales.'
-        },
-        {
-          q: '¿Cuáles son los horarios de apertura?',
-          a: 'Lunes a viernes: 9:00 AM - 6:00 PM | Sábados: 10:00 AM - 4:00 PM | Domingos: Cerrado. Para eventos especiales, contáctanos.'
-        },
-        {
-          q: '¿Cómo llego al museo?',
-          a: 'Estamos ubicados en Angela Peralta 35, Col. Periodista, Hermosillo, Sonora. Disponemos de estacionamiento y acceso para personas con discapacidad.'
-        },
-        {
-          q: '¿Puedo llevar a mi grupo escolar?',
-          a: 'Sí, ofrecemos tours especiales y programas educativos para escuelas. Contáctanos con anticipación para organizar tu visita.'
-        }
-      ]
-    },
-    {
-      category: 'Sobre Donación',
-      questions: [
-        {
-          q: '¿A qué edad se puede ser donante?',
-          a: 'Puedes registrarte desde los 18 años. Sin embargo, menores de edad pueden ser donantes con consentimiento de sus padres.'
-        },
-        {
-          q: '¿Cuáles son los tipos de donación?',
-          a: 'Existen dos tipos: donación de órganos (después de la muerte) y donación en vida (riñón o lóbulo del hígado).'
-        },
-        {
-          q: '¿Cuándo deja de ser válido mi registro?',
-          a: 'Tu registro es válido de por vida, pero puedes revocar tu decisión en cualquier momento.'
-        },
-        {
-          q: '¿Donar afecta mi funeral?',
-          a: 'No. El cuerpo es tratado con el máximo respeto durante el proceso de donación. Los arreglos funerarios no se ven afectados.'
-        },
-        {
-          q: '¿Si soy donante, ¿recibiré la misma atención médica?',
-          a: 'Sí. Los donantes reciben exactamente la misma calidad de atención que cualquier otro paciente. Tu decisión es privada.'
-        }
-      ]
-    },
-    {
-      category: 'Fundación Miika',
-      questions: [
-        {
-          q: '¿Cómo puede ayudar Fundación Miika a mi familia?',
-          a: 'Ofrecemos apoyo médico, psicológico y económico integral durante el proceso de trasplante. Contáctanos para una consulta.'
-        },
-        {
-          q: '¿Cuáles son los gastos que cubre la Fundación?',
-          a: 'Cubrimos costos médicos, transporte, alojamiento y otros gastos asociados al trasplante que no sean cubiertos por servicios de salud.'
-        },
-        {
-          q: '¿Cómo me registro con Fundación Miika?',
-          a: 'Llámanos al número de contacto o visita nuestras oficinas. Te ayudaremos a entender todos los beneficios disponibles para ti.'
-        }
-      ]
-    },
-    {
-      category: 'Voluntariado',
-      questions: [
-        {
-          q: '¿Cómo me puedo hacer voluntario en DARte?',
-          a: 'Contáctanos a través del formulario de contacto. Estamos buscando personas apasionadas por la donación de órganos.'
-        },
-        {
-          q: '¿Qué requisitos tengo que cumplir?',
-          a: 'Necesitas ser mayor de 18 años, tener entusiasmo y disponibilidad. Ofrecemos capacitación completa.'
-        },
-        {
-          q: '¿Es remunerado el voluntariado?',
-          a: 'El voluntariado es un acto de amor y servicio. No es remunerado, pero sí invaluable para la comunidad.'
-        }
-      ]
-    }
-  ]
-
+  const faqs = t('faq.categories', { returnObjects: true })
   const allQuestions = faqs.flatMap(cat => cat.questions)
 
   return (
@@ -101,13 +21,13 @@ export default function FAQ() {
           viewport={{ once: true }}
         >
           <span className="inline-block bg-[#3F8A4B]/10 text-[#3F8A4B] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#3F8A4B]/20">
-            Dudas y Respuestas
+            {t('faq.badge')}
           </span>
           <h2 className="section-title mb-4">
-            Preguntas Frecuentes
+            {t('faq.title')}
           </h2>
           <p className="section-subtitle">
-            Resolvemos tus dudas sobre el museo, donación de órganos y Fundación Miika.
+            {t('faq.subtitle')}
           </p>
         </motion.div>
 
@@ -169,14 +89,14 @@ export default function FAQ() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-4">
-            ¿No encontraste tu respuesta?
+            {t('faq.helpTitle')}
           </h3>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Contáctanos directamente. Nuestro equipo está disponible para responder tus preguntas específicas.
+            {t('faq.helpText')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#contacto" className="btn-primary">
-              Contacto
+              {t('faq.helpContact')}
             </a>
             <a href="https://wa.me/526621234567" target="_blank" rel="noopener noreferrer" className="btn-secondary">
               WhatsApp

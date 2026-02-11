@@ -1,0 +1,379 @@
+{
+  "header": {
+    "nav": {
+      "inicio": "Inicio",
+      "sobre": "Sobre DARte",
+      "miika": "Fundación Miika",
+      "estadisticas": "Estadísticas",
+      "testimonios": "Testimonios",
+      "faq": "FAQ"
+    },
+    "contacto": "Contacto"
+  },
+
+  "hero": {
+    "title1": "DARte: El único museo dedicado",
+    "title2": "a la donación de órganos",
+    "subtitle": "Descubre un espacio educativo único donde la ciencia, la cultura y la esperanza se unen. Aprende sobre el impacto de la donación de órganos y cómo puedes salvar vidas.",
+    "cta": "Visita el Museo",
+    "imageAlt": "DARte Imagen",
+    "stat1Number": "1",
+    "stat1Label": "Museo único en el mundo",
+    "stat2Number": "1000+",
+    "stat2Label": "Vidas impactadas"
+  },
+
+  "about": {
+    "badge": "Sobre DARte",
+    "title": "Un Espacio Único en el Mundo",
+    "subtitle": "DARte es el primer y único museo en el mundo dedicado específicamente a la educación sobre donación de órganos, ubicado en el corazón de Hermosillo, Sonora.",
+    "whatIs": "¿Qué es DARte?",
+    "whatIsDesc": "DARte es un espacio educativo innovador que combina ciencia, cultura y esperanza. Nuestro objetivo es concienciar y educar a la sociedad sobre la importancia vital de la donación de órganos, transformando vidas a través del conocimiento.",
+    "list": [
+      "Centro educativo especializado en donación de órganos",
+      "Exhibiciones interactivas y científicas",
+      "Apoyo integral a donantes y receptores",
+      "Programas educativos para escuelas y comunidades"
+    ],
+    "locationLabel": "📍 Ubicación",
+    "locationAddress": "Angela Peralta 35, Col. Periodista, Hermosillo, Sonora, México",
+    "pillars": {
+      "esperanza": "Esperanza",
+      "comunidad": "Comunidad",
+      "educacion": "Educación",
+      "medicina": "Medicina"
+    }
+  },
+
+  "miika": {
+    "badge": "Fundación Miika",
+    "title": "Donando Esperanzas",
+    "subtitle": "La Fundación Miika es el corazón de DARte, brindando apoyo integral y transformador a pacientes y familias en su camino hacia el trasplante de órganos.",
+    "description": "La Fundación Miika nace del compromiso de transformar vidas a través de la donación de órganos. Trabajamos en cada aspecto del proceso de trasplante para asegurar que nuestros pacientes y familias reciban el apoyo que necesitan.",
+    "services": [
+      {
+        "title": "🏥 Apoyo Médico",
+        "description": "Orientación profesional en procesos médicos, coordinación con hospitales, y seguimiento post-trasplante."
+      },
+      {
+        "title": "🧠 Apoyo Psicológico",
+        "description": "Acompañamiento emocional integral para donantes, receptores y sus familias durante todo el proceso."
+      },
+      {
+        "title": "💰 Apoyo Económico",
+        "description": "Asistencia financiera para gastos médicos, transporte, alojamiento y otros costos asociados al trasplante."
+      }
+    ]
+  },
+
+  "statistics": {
+    "badge": "Datos Impactantes",
+    "title": "Estadísticas de Donación en México",
+    "subtitle": "Conoce los números que reflejan la urgencia y el impacto de la donación de órganos en nuestro país.",
+    "stats": [
+      { "number": "17,000+", "label": "Personas en lista de espera en México" },
+      { "number": "6,000+", "label": "Trasplantes realizados anualmente" },
+      { "number": "1 de 4", "label": "Mexicanos puede ser donante" },
+      { "number": "1", "label": "Único museo en el mundo" }
+    ],
+    "importanceTitle": "¿Por qué es importante la donación?",
+    "importance": [
+      {
+        "title": "Salva Vidas",
+        "description": "Un donante puede salvar hasta 8 vidas diferentes mediante donación de órganos, además de mejorar la calidad de vida de otros pacientes."
+      },
+      {
+        "title": "Segundo Chance",
+        "description": "Los trasplantes ofrecen una mejor calidad de vida comparado con la diálisis u otros tratamientos de largo plazo."
+      },
+      {
+        "title": "Legado Duradero",
+        "description": "La decisión de donar es un acto de solidaridad que impacta a múltiples familias y comunidades por años."
+      }
+    ]
+  },
+
+  "whyVisit": {
+    "badge": "Experiencia Única",
+    "title": "¿Por qué Visitar el Museo DARte?",
+    "subtitle": "Descubre una experiencia educativa sin precedentes que transformará tu perspectiva sobre la donación de órganos.",
+    "reasons": [
+      {
+        "title": "Educación Interactiva",
+        "description": "Aprende sobre procesos médicos, ética de trasplantes y el impacto global de la donación a través de exhibiciones interactivas."
+      },
+      {
+        "title": "Historias Inspiradoras",
+        "description": "Conoce testimonios reales de donantes, receptores y familias cuyas vidas fueron transformadas por la donación."
+      },
+      {
+        "title": "Conciencia Social",
+        "description": "Participa en nuestros programas de conciencia comunitaria y únete a una misión de cambio social."
+      }
+    ]
+  },
+
+  "whyDonate": {
+    "badge": "Impacto Social",
+    "title": "¿Por qué Convertirse en Donante?",
+    "subtitle": "Descubre los beneficios de la donación de órganos y cómo tu decisión puede cambiar vidas.",
+    "benefits": [
+      { "title": "Salva hasta 8 vidas", "desc": "Un donante puede salvar múltiples vidas" },
+      { "title": "Legado Duradero", "desc": "Tu decision impacta a familias por años" },
+      { "title": "Paz Mental", "desc": "Saber que ayudaste a otros es profundamente satisfactorio" },
+      { "title": "Comunidad", "desc": "Únete a millones de donantes comprometidos" }
+    ],
+    "mythsTitle": "Mitos y Realidades",
+    "mythLabel": "Mito",
+    "realityLabel": "Realidad",
+    "myths": [
+      { "myth": "La donación afecta el funeral", "reality": "El cuerpo se respeta completamente durante el proceso" },
+      { "myth": "Donantes reciben menos atención médica", "reality": "Todos reciben la misma calidad de cuidado" },
+      { "myth": "La familia incurre en gastos", "reality": "Todos los gastos corre por cuenta de los servicios de salud" },
+      { "myth": "Mi religión no permite la donación", "reality": "La mayoría de religiones ven la donación como un acto de amor y caridad" }
+    ]
+  },
+
+  "testimonials": {
+    "badge": "Historias Reales",
+    "title": "Testimonios que Inspiran",
+    "subtitle": "Escucha las historias de personas cuyas vidas fueron transformadas por la donación de órganos.",
+    "items": [
+      {
+        "name": "María González",
+        "role": "Receptora de Trasplante",
+        "content": "Gracias a la donación de mi hermana, ahora tengo una segunda oportunidad de vida. DARte me ayudó a entender el proceso y a no estar sola en este camino."
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "role": "Familia Donante",
+        "content": "Cuando perdimos a nuestro padre, donó sus órganos. Saber que salvó varias vidas nos da consuelo. DARte nos ayudó a procesar este momento tan difícil."
+      },
+      {
+        "name": "Dr. Miguel Hernández",
+        "role": "Cirujano de Trasplantes",
+        "content": "DARte es revolucionario. Por primera vez tenemos un espacio que educa a la sociedad sobre la importancia crítica de la donación. ¡Es necesario!"
+      },
+      {
+        "name": "Elena Martínez",
+        "role": "Visitante y Educadora",
+        "content": "Llevé a mis estudiantes a DARte. Quedaron impactados. Ahora varios se han registrado como donantes. El museo realmente cambia perspectivas."
+      },
+      {
+        "name": "José Luis Gutiérrez",
+        "role": "Donante Vivo",
+        "content": "Doné uno de mis riñones. La experiencia fue diferente a lo que imaginaba. DARte ayuda a desmitificar la donación. Es un acto de amor real."
+      },
+      {
+        "name": "Patricia Solis",
+        "role": "Voluntaria en DARte",
+        "content": "Trabajar aquí me ha transformado. Ver cómo el museo inspira a las personas a ser donantes es lo más gratificante que he experimentado."
+      }
+    ],
+    "videoFallback": "Tu navegador no soporta reproducción de videos.",
+    "esotBadge": "Congreso Europeo de Trasplantes",
+    "esotTitle": "ESOT 2025",
+    "esotSpeakers": [
+      {
+        "title": "Dr. Efestratos (Stratos) Chatzixiros",
+        "role": "Director de Donación de Órganos de la Organización Mundial de la Salud"
+      },
+      {
+        "title": "Mauricio Carvalho",
+        "role": "Vicepresidente de Asuntos Médicos, Bridge To Life"
+      }
+    ],
+    "wtcBadge": "Congreso Mundial de Trasplantes",
+    "wtcTitle": "WTC 2025",
+    "wtcDarteTitle": "Ceremonia de Clausura - DARte",
+    "wtcDarteDesc": "Video donde se menciona a DARte en la ceremonia de clausura, como uno de los 25 trabajos mas innovadores presentados",
+    "wtcSpeakers": [
+      {
+        "title": "Dr. Jim Rodrigue",
+        "role": "Director de Investigación y Análisis de Datos, Servicio de Donación de Órganos y Tejidos de Nueva Inglaterra"
+      },
+      {
+        "title": "Virginia Liuti",
+        "role": "Asesora Internacional, Organ Recovery Systems"
+      }
+    ],
+    "ctaTitle": "Tu Historia También Puede Inspirar",
+    "ctaText": "Si tienes una historia sobre donación de órganos que te gustaría compartir, contáctanos. Tu experiencia puede cambiar la vida de muchas personas.",
+    "ctaButton": "Comparte Tu Historia"
+  },
+
+  "howToHelp": {
+    "badge": "Toma Acción",
+    "title": "¿Cómo Puedes Ayudar?",
+    "subtitle": "Existen múltiples formas de ser parte de la misión de DARte. Elige la que mejor se ajuste a ti.",
+    "ways": [
+      {
+        "title": "Regístrate como Donante",
+        "description": "El primer paso para salvar vidas. Regístrate en el Registro Nacional de Donantes.",
+        "cta": "Registrarme Ahora"
+      },
+      {
+        "title": "Visita el Museo",
+        "description": "Aprende sobre donación de órganos en nuestro museo. Una experiencia transformadora te espera.",
+        "cta": "Planificar Visita"
+      },
+      {
+        "title": "Sé Voluntario",
+        "description": "Únete a nuestro equipo de voluntarios y ayuda a educar a la comunidad.",
+        "cta": "Voluntariarme"
+      },
+      {
+        "title": "Haz una Donación",
+        "description": "Contribuye financieramente para expandir nuestros programas educativos.",
+        "cta": "Donar Ahora"
+      }
+    ],
+    "whyMattersTitle": "Por qué Cada Acción Importa",
+    "directAction": {
+      "title": "Acción Directa",
+      "p1": "Cuando te registras como donante, contribuyes directamente a la red de salvamento de vidas. Cada donante potencial es una chispa de esperanza para miles de personas en lista de espera.",
+      "p2": "Visitar el museo te permite experimentar de primera mano cómo la donación transforma comunidades, y después puedes compartir esa experiencia con tu red."
+    },
+    "systemicSupport": {
+      "title": "Apoyo Sistémico",
+      "p1": "Los voluntarios y donantes nos permiten expandir nuestros programas educativos a más comunidades y escuelas.",
+      "p2": "Juntos, creamos un movimiento de conciencia que cambia la cultura alrededor de la donación de órganos en México."
+    }
+  },
+
+  "faq": {
+    "badge": "Dudas y Respuestas",
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Resolvemos tus dudas sobre el museo, donación de órganos y Fundación Miika.",
+    "categories": [
+      {
+        "category": "Sobre el Museo",
+        "questions": [
+          {
+            "q": "¿Cuál es el costo de entrada al museo?",
+            "a": "El acceso a DARte es gratuito para propósitos educativos. Contáctanos para información sobre tours grupales o eventos especiales."
+          },
+          {
+            "q": "¿Cuáles son los horarios de apertura?",
+            "a": "Lunes a viernes: 9:00 AM - 6:00 PM | Sábados: 10:00 AM - 4:00 PM | Domingos: Cerrado. Para eventos especiales, contáctanos."
+          },
+          {
+            "q": "¿Cómo llego al museo?",
+            "a": "Estamos ubicados en Angela Peralta 35, Col. Periodista, Hermosillo, Sonora. Disponemos de estacionamiento y acceso para personas con discapacidad."
+          },
+          {
+            "q": "¿Puedo llevar a mi grupo escolar?",
+            "a": "Sí, ofrecemos tours especiales y programas educativos para escuelas. Contáctanos con anticipación para organizar tu visita."
+          }
+        ]
+      },
+      {
+        "category": "Sobre Donación",
+        "questions": [
+          {
+            "q": "¿A qué edad se puede ser donante?",
+            "a": "Puedes registrarte desde los 18 años. Sin embargo, menores de edad pueden ser donantes con consentimiento de sus padres."
+          },
+          {
+            "q": "¿Cuáles son los tipos de donación?",
+            "a": "Existen dos tipos: donación de órganos (después de la muerte) y donación en vida (riñón o lóbulo del hígado)."
+          },
+          {
+            "q": "¿Cuándo deja de ser válido mi registro?",
+            "a": "Tu registro es válido de por vida, pero puedes revocar tu decisión en cualquier momento."
+          },
+          {
+            "q": "¿Donar afecta mi funeral?",
+            "a": "No. El cuerpo es tratado con el máximo respeto durante el proceso de donación. Los arreglos funerarios no se ven afectados."
+          },
+          {
+            "q": "¿Si soy donante, ¿recibiré la misma atención médica?",
+            "a": "Sí. Los donantes reciben exactamente la misma calidad de atención que cualquier otro paciente. Tu decisión es privada."
+          }
+        ]
+      },
+      {
+        "category": "Fundación Miika",
+        "questions": [
+          {
+            "q": "¿Cómo puede ayudar Fundación Miika a mi familia?",
+            "a": "Ofrecemos apoyo médico, psicológico y económico integral durante el proceso de trasplante. Contáctanos para una consulta."
+          },
+          {
+            "q": "¿Cuáles son los gastos que cubre la Fundación?",
+            "a": "Cubrimos costos médicos, transporte, alojamiento y otros gastos asociados al trasplante que no sean cubiertos por servicios de salud."
+          },
+          {
+            "q": "¿Cómo me registro con Fundación Miika?",
+            "a": "Llámanos al número de contacto o visita nuestras oficinas. Te ayudaremos a entender todos los beneficios disponibles para ti."
+          }
+        ]
+      },
+      {
+        "category": "Voluntariado",
+        "questions": [
+          {
+            "q": "¿Cómo me puedo hacer voluntario en DARte?",
+            "a": "Contáctanos a través del formulario de contacto. Estamos buscando personas apasionadas por la donación de órganos."
+          },
+          {
+            "q": "¿Qué requisitos tengo que cumplir?",
+            "a": "Necesitas ser mayor de 18 años, tener entusiasmo y disponibilidad. Ofrecemos capacitación completa."
+          },
+          {
+            "q": "¿Es remunerado el voluntariado?",
+            "a": "El voluntariado es un acto de amor y servicio. No es remunerado, pero sí invaluable para la comunidad."
+          }
+        ]
+      }
+    ],
+    "helpTitle": "¿No encontraste tu respuesta?",
+    "helpText": "Contáctanos directamente. Nuestro equipo está disponible para responder tus preguntas específicas.",
+    "helpContact": "Contacto"
+  },
+
+  "contact": {
+    "badge": "Ponte en Contacto",
+    "title": "Contacto y Ubicación",
+    "subtitle": "Estamos aquí para responder tus preguntas y recibir tu visita.",
+    "info": {
+      "location": "Ubicación",
+      "locationItems": ["Angela Peralta 35", "Col. Periodista", "Hermosillo, Sonora, México"],
+      "phone": "Teléfono",
+      "phoneItems": ["+52 (662) 123-4567", "Lunes a Viernes: 9am - 6pm"],
+      "email": "Email",
+      "emailItems": ["info@darte.mx", "Respuesta en 24 horas"],
+      "hours": "Horarios",
+      "hoursItems": ["Lun-Vie: 9:00am - 6:00pm", "Sábados: 10:00am - 4:00pm", "Domingos: Cerrado"]
+    },
+    "form": {
+      "title": "Envíanos tu Mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre completo",
+      "emailLabel": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectOptions": ["Selecciona un asunto", "Visita al museo", "Programa educativo", "Donación", "Voluntariado", "Otros"],
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje...",
+      "submit": "Enviar Mensaje",
+      "successAlert": "Formulario enviado. Nos contactaremos pronto!"
+    }
+  },
+
+  "footer": {
+    "darteDesc": "El único museo en el mundo dedicado a la educación sobre donación de órganos. Un espacio de esperanza, ciencia y transformación.",
+    "miikaDesc": "Donando Esperanzas. Apoyo integral médico, psicológico y económico para pacientes y familias en procesos de trasplante.",
+    "contactTitle": "Contacto",
+    "socialTitle": "Síguenos",
+    "copyright": "DARte - Donando Esperanzas. Todos los derechos reservados.",
+    "mission": "Un corazón, una esperanza",
+    "aboutUs": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+
+  "whatsapp": {
+    "message": "Hola DARte, me gustaría obtener más información sobre el museo y la donación de órganos.",
+    "title": "Contacto por WhatsApp"
+  }
+}

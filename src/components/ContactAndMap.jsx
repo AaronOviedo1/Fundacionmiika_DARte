@@ -1,7 +1,39 @@
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function ContactAndMap() {
+  const { t } = useTranslation()
+
+  const contactData = [
+    {
+      icon: MapPin,
+      title: t('contact.info.location'),
+      items: t('contact.info.locationItems', { returnObjects: true }),
+      color: '#3F8A4B'
+    },
+    {
+      icon: Phone,
+      title: t('contact.info.phone'),
+      items: t('contact.info.phoneItems', { returnObjects: true }),
+      color: '#EECA44'
+    },
+    {
+      icon: Mail,
+      title: t('contact.info.email'),
+      items: t('contact.info.emailItems', { returnObjects: true }),
+      color: '#CF423B'
+    },
+    {
+      icon: Clock,
+      title: t('contact.info.hours'),
+      items: t('contact.info.hoursItems', { returnObjects: true }),
+      color: '#5F5FA2'
+    }
+  ]
+
+  const subjectOptions = t('contact.form.subjectOptions', { returnObjects: true })
+
   return (
     <section id="contacto" className="py-20 bg-gradient-to-br from-[#3F8A4B]/5 to-[#5F5FA2]/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -13,13 +45,13 @@ export default function ContactAndMap() {
           viewport={{ once: true }}
         >
           <span className="inline-block bg-[#3F8A4B]/10 text-[#3F8A4B] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#3F8A4B]/20">
-            Ponte en Contacto
+            {t('contact.badge')}
           </span>
           <h2 className="section-title mb-4">
-            Contacto y Ubicación
+            {t('contact.title')}
           </h2>
           <p className="section-subtitle">
-            Estamos aquí para responder tus preguntas y recibir tu visita.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -32,32 +64,7 @@ export default function ContactAndMap() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            {[
-              {
-                icon: MapPin,
-                title: 'Ubicación',
-                items: ['Angela Peralta 35', 'Col. Periodista', 'Hermosillo, Sonora, México'],
-                color: '#3F8A4B'
-              },
-              {
-                icon: Phone,
-                title: 'Teléfono',
-                items: ['+52 (662) 123-4567', 'Lunes a Viernes: 9am - 6pm'],
-                color: '#EECA44'
-              },
-              {
-                icon: Mail,
-                title: 'Email',
-                items: ['info@darte.mx', 'Respuesta en 24 horas'],
-                color: '#CF423B'
-              },
-              {
-                icon: Clock,
-                title: 'Horarios',
-                items: ['Lun-Vie: 9:00am - 6:00pm', 'Sábados: 10:00am - 4:00pm', 'Domingos: Cerrado'],
-                color: '#5F5FA2'
-              }
-            ].map((contact, index) => {
+            {contactData.map((contact, index) => {
               const Icon = contact.icon
               return (
                 <motion.div
@@ -96,20 +103,20 @@ export default function ContactAndMap() {
             viewport={{ once: true }}
             onSubmit={(e) => {
               e.preventDefault()
-              alert('Formulario enviado. Nos contactaremos pronto!')
+              alert(t('contact.form.successAlert'))
             }}
           >
             <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-6">
-              Envíanos tu Mensaje
+              {t('contact.form.title')}
             </h3>
 
             <div className="space-y-4">
               {/* Name */}
               <div>
-                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">Nombre</label>
+                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">{t('contact.form.name')}</label>
                 <input
                   type="text"
-                  placeholder="Tu nombre completo"
+                  placeholder={t('contact.form.namePlaceholder')}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#3F8A4B] transition-colors"
                   required
                 />
@@ -117,10 +124,10 @@ export default function ContactAndMap() {
 
               {/* Email */}
               <div>
-                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">Email</label>
+                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">{t('contact.form.emailLabel')}</label>
                 <input
                   type="email"
-                  placeholder="tu@email.com"
+                  placeholder={t('contact.form.emailPlaceholder')}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#3F8A4B] transition-colors"
                   required
                 />
@@ -128,23 +135,20 @@ export default function ContactAndMap() {
 
               {/* Subject */}
               <div>
-                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">Asunto</label>
+                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">{t('contact.form.subject')}</label>
                 <select className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#3F8A4B] transition-colors">
-                  <option>Selecciona un asunto</option>
-                  <option>Visita al museo</option>
-                  <option>Programa educativo</option>
-                  <option>Donación</option>
-                  <option>Voluntariado</option>
-                  <option>Otros</option>
+                  {subjectOptions.map((option, idx) => (
+                    <option key={idx}>{option}</option>
+                  ))}
                 </select>
               </div>
 
               {/* Message */}
               <div>
-                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">Mensaje</label>
+                <label className="block text-sm font-semibold text-[#5F5FA2] mb-2">{t('contact.form.message')}</label>
                 <textarea
                   rows="5"
-                  placeholder="Tu mensaje..."
+                  placeholder={t('contact.form.messagePlaceholder')}
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-[#3F8A4B] transition-colors resize-none"
                   required
                 />
@@ -157,7 +161,7 @@ export default function ContactAndMap() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Enviar Mensaje
+                {t('contact.form.submit')}
               </motion.button>
             </div>
           </motion.form>

@@ -1,37 +1,13 @@
 import { motion } from 'framer-motion'
 import { Users, Heart, TrendingUp, Award } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function Statistics() {
-  const stats = [
-    {
-      icon: Users,
-      number: '17,000+',
-      label: 'Personas en lista de espera en México',
-      color: '#3F8A4B',
-      bg: '#3F8A4B'
-    },
-    {
-      icon: Heart,
-      number: '6,000+',
-      label: 'Trasplantes realizados anualmente',
-      color: '#CF423B',
-      bg: '#CF423B'
-    },
-    {
-      icon: TrendingUp,
-      number: '1 de 4',
-      label: 'Mexicanos puede ser donante',
-      color: '#EECA44',
-      bg: '#EECA44'
-    },
-    {
-      icon: Award,
-      number: '1',
-      label: 'Único museo en el mundo',
-      color: '#5F5FA2',
-      bg: '#5F5FA2'
-    }
-  ]
+  const { t } = useTranslation()
+
+  const icons = [Users, Heart, TrendingUp, Award]
+  const colors = ['#3F8A4B', '#CF423B', '#EECA44', '#5F5FA2']
+  const statsData = t('statistics.stats', { returnObjects: true })
 
   return (
     <section id="estadisticas" className="py-20 bg-white">
@@ -44,24 +20,25 @@ export default function Statistics() {
           viewport={{ once: true }}
         >
           <span className="inline-block bg-[#3F8A4B]/10 text-[#3F8A4B] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#3F8A4B]/20">
-            Datos Impactantes
+            {t('statistics.badge')}
           </span>
           <h2 className="section-title mb-4">
-            Estadísticas de Donación en México
+            {t('statistics.title')}
           </h2>
           <p className="section-subtitle">
-            Conoce los números que reflejan la urgencia y el impacto de la donación de órganos en nuestro país.
+            {t('statistics.subtitle')}
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon
+          {statsData.map((stat, index) => {
+            const Icon = icons[index]
+            const color = colors[index]
             return (
               <motion.div
                 key={index}
                 className="relative overflow-hidden rounded-2xl p-8 text-white"
-                style={{ backgroundColor: stat.bg }}
+                style={{ backgroundColor: color }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -96,23 +73,10 @@ export default function Statistics() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-6">
-            ¿Por qué es importante la donación?
+            {t('statistics.importanceTitle')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Salva Vidas',
-                description: 'Un donante puede salvar hasta 8 vidas diferentes mediante donación de órganos, además de mejorar la calidad de vida de otros pacientes.'
-              },
-              {
-                title: 'Segundo Chance',
-                description: 'Los trasplantes ofrecen una mejor calidad de vida comparado con la diálisis u otros tratamientos de largo plazo.'
-              },
-              {
-                title: 'Legado Duradero',
-                description: 'La decisión de donar es un acto de solidaridad que impacta a múltiples familias y comunidades por años.'
-              }
-            ].map((item, index) => (
+            {(t('statistics.importance', { returnObjects: true })).map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

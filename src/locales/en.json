@@ -1,0 +1,379 @@
+{
+  "header": {
+    "nav": {
+      "inicio": "Home",
+      "sobre": "About DARte",
+      "miika": "Miika Foundation",
+      "estadisticas": "Statistics",
+      "testimonios": "Testimonials",
+      "faq": "FAQ"
+    },
+    "contacto": "Contact"
+  },
+
+  "hero": {
+    "title1": "DARte: The only museum dedicated",
+    "title2": "to organ donation",
+    "subtitle": "Discover a unique educational space where science, culture, and hope come together. Learn about the impact of organ donation and how you can save lives.",
+    "cta": "Visit the Museum",
+    "imageAlt": "DARte Image",
+    "stat1Number": "1",
+    "stat1Label": "Only museum in the world",
+    "stat2Number": "1000+",
+    "stat2Label": "Lives impacted"
+  },
+
+  "about": {
+    "badge": "About DARte",
+    "title": "A Unique Space in the World",
+    "subtitle": "DARte is the first and only museum in the world specifically dedicated to organ donation education, located in the heart of Hermosillo, Sonora.",
+    "whatIs": "What is DARte?",
+    "whatIsDesc": "DARte is an innovative educational space that combines science, culture, and hope. Our goal is to raise awareness and educate society about the vital importance of organ donation, transforming lives through knowledge.",
+    "list": [
+      "Educational center specialized in organ donation",
+      "Interactive and scientific exhibitions",
+      "Comprehensive support for donors and recipients",
+      "Educational programs for schools and communities"
+    ],
+    "locationLabel": "📍 Location",
+    "locationAddress": "Angela Peralta 35, Col. Periodista, Hermosillo, Sonora, Mexico",
+    "pillars": {
+      "esperanza": "Hope",
+      "comunidad": "Community",
+      "educacion": "Education",
+      "medicina": "Medicine"
+    }
+  },
+
+  "miika": {
+    "badge": "Miika Foundation",
+    "title": "Donating Hope",
+    "subtitle": "The Miika Foundation is the heart of DARte, providing comprehensive and transformative support to patients and families on their journey toward organ transplantation.",
+    "description": "The Miika Foundation was born from the commitment to transform lives through organ donation. We work on every aspect of the transplant process to ensure our patients and families receive the support they need.",
+    "services": [
+      {
+        "title": "🏥 Medical Support",
+        "description": "Professional guidance in medical processes, hospital coordination, and post-transplant follow-up."
+      },
+      {
+        "title": "🧠 Psychological Support",
+        "description": "Comprehensive emotional support for donors, recipients, and their families throughout the entire process."
+      },
+      {
+        "title": "💰 Financial Support",
+        "description": "Financial assistance for medical expenses, transportation, accommodation, and other costs associated with transplantation."
+      }
+    ]
+  },
+
+  "statistics": {
+    "badge": "Impactful Data",
+    "title": "Donation Statistics in Mexico",
+    "subtitle": "Learn about the numbers that reflect the urgency and impact of organ donation in our country.",
+    "stats": [
+      { "number": "17,000+", "label": "People on the waiting list in Mexico" },
+      { "number": "6,000+", "label": "Transplants performed annually" },
+      { "number": "1 in 4", "label": "Mexicans can be a donor" },
+      { "number": "1", "label": "Only museum in the world" }
+    ],
+    "importanceTitle": "Why is donation important?",
+    "importance": [
+      {
+        "title": "Saves Lives",
+        "description": "One donor can save up to 8 different lives through organ donation, while also improving the quality of life for other patients."
+      },
+      {
+        "title": "Second Chance",
+        "description": "Transplants offer a better quality of life compared to dialysis or other long-term treatments."
+      },
+      {
+        "title": "Lasting Legacy",
+        "description": "The decision to donate is an act of solidarity that impacts multiple families and communities for years."
+      }
+    ]
+  },
+
+  "whyVisit": {
+    "badge": "Unique Experience",
+    "title": "Why Visit the DARte Museum?",
+    "subtitle": "Discover an unprecedented educational experience that will transform your perspective on organ donation.",
+    "reasons": [
+      {
+        "title": "Interactive Education",
+        "description": "Learn about medical processes, transplant ethics, and the global impact of donation through interactive exhibitions."
+      },
+      {
+        "title": "Inspiring Stories",
+        "description": "Hear real testimonies from donors, recipients, and families whose lives were transformed by donation."
+      },
+      {
+        "title": "Social Awareness",
+        "description": "Participate in our community awareness programs and join a mission for social change."
+      }
+    ]
+  },
+
+  "whyDonate": {
+    "badge": "Social Impact",
+    "title": "Why Become a Donor?",
+    "subtitle": "Discover the benefits of organ donation and how your decision can change lives.",
+    "benefits": [
+      { "title": "Save up to 8 lives", "desc": "One donor can save multiple lives" },
+      { "title": "Lasting Legacy", "desc": "Your decision impacts families for years" },
+      { "title": "Peace of Mind", "desc": "Knowing you helped others is deeply satisfying" },
+      { "title": "Community", "desc": "Join millions of committed donors" }
+    ],
+    "mythsTitle": "Myths and Facts",
+    "mythLabel": "Myth",
+    "realityLabel": "Fact",
+    "myths": [
+      { "myth": "Donation affects the funeral", "reality": "The body is completely respected during the process" },
+      { "myth": "Donors receive less medical attention", "reality": "Everyone receives the same quality of care" },
+      { "myth": "The family incurs expenses", "reality": "All expenses are covered by health services" },
+      { "myth": "My religion doesn't allow donation", "reality": "Most religions view donation as an act of love and charity" }
+    ]
+  },
+
+  "testimonials": {
+    "badge": "Real Stories",
+    "title": "Testimonials that Inspire",
+    "subtitle": "Hear the stories of people whose lives were transformed by organ donation.",
+    "items": [
+      {
+        "name": "María González",
+        "role": "Transplant Recipient",
+        "content": "Thanks to my sister's donation, I now have a second chance at life. DARte helped me understand the process and not feel alone on this journey."
+      },
+      {
+        "name": "Carlos Rodríguez",
+        "role": "Donor Family",
+        "content": "When we lost our father, he donated his organs. Knowing that he saved several lives gives us comfort. DARte helped us process this difficult moment."
+      },
+      {
+        "name": "Dr. Miguel Hernández",
+        "role": "Transplant Surgeon",
+        "content": "DARte is revolutionary. For the first time, we have a space that educates society about the critical importance of donation. It's necessary!"
+      },
+      {
+        "name": "Elena Martínez",
+        "role": "Visitor and Educator",
+        "content": "I took my students to DARte. They were deeply moved. Now several have registered as donors. The museum truly changes perspectives."
+      },
+      {
+        "name": "José Luis Gutiérrez",
+        "role": "Living Donor",
+        "content": "I donated one of my kidneys. The experience was different from what I imagined. DARte helps demystify donation. It's a real act of love."
+      },
+      {
+        "name": "Patricia Solis",
+        "role": "DARte Volunteer",
+        "content": "Working here has transformed me. Seeing how the museum inspires people to become donors is the most rewarding thing I've experienced."
+      }
+    ],
+    "videoFallback": "Your browser does not support video playback.",
+    "esotBadge": "European Society for Organ Transplantation",
+    "esotTitle": "ESOT 2025",
+    "esotSpeakers": [
+      {
+        "title": "Dr. Efestratos (Stratos) Chatzixiros",
+        "role": "Director of Organ Donation, World Health Organization"
+      },
+      {
+        "title": "Mauricio Carvalho",
+        "role": "Vice President of Medical Affairs, Bridge To Life"
+      }
+    ],
+    "wtcBadge": "World Transplant Congress",
+    "wtcTitle": "WTC 2025",
+    "wtcDarteTitle": "Closing Ceremony - DARte",
+    "wtcDarteDesc": "Video featuring DARte at the closing ceremony, recognized as one of the 25 most innovative works presented",
+    "wtcSpeakers": [
+      {
+        "title": "Dr. Jim Rodrigue",
+        "role": "Director of Research and Data Analytics, New England Organ & Tissue Donation Services"
+      },
+      {
+        "title": "Virginia Liuti",
+        "role": "International Advisor, Organ Recovery Systems"
+      }
+    ],
+    "ctaTitle": "Your Story Can Also Inspire",
+    "ctaText": "If you have a story about organ donation you'd like to share, contact us. Your experience can change the lives of many people.",
+    "ctaButton": "Share Your Story"
+  },
+
+  "howToHelp": {
+    "badge": "Take Action",
+    "title": "How Can You Help?",
+    "subtitle": "There are multiple ways to be part of DARte's mission. Choose the one that best suits you.",
+    "ways": [
+      {
+        "title": "Register as a Donor",
+        "description": "The first step to saving lives. Register with the National Donor Registry.",
+        "cta": "Register Now"
+      },
+      {
+        "title": "Visit the Museum",
+        "description": "Learn about organ donation at our museum. A transformative experience awaits you.",
+        "cta": "Plan Your Visit"
+      },
+      {
+        "title": "Become a Volunteer",
+        "description": "Join our volunteer team and help educate the community.",
+        "cta": "Volunteer"
+      },
+      {
+        "title": "Make a Donation",
+        "description": "Contribute financially to expand our educational programs.",
+        "cta": "Donate Now"
+      }
+    ],
+    "whyMattersTitle": "Why Every Action Matters",
+    "directAction": {
+      "title": "Direct Action",
+      "p1": "When you register as a donor, you directly contribute to the life-saving network. Every potential donor is a spark of hope for thousands of people on the waiting list.",
+      "p2": "Visiting the museum allows you to experience firsthand how donation transforms communities, and then you can share that experience with your network."
+    },
+    "systemicSupport": {
+      "title": "Systemic Support",
+      "p1": "Volunteers and donors allow us to expand our educational programs to more communities and schools.",
+      "p2": "Together, we create an awareness movement that changes the culture around organ donation in Mexico."
+    }
+  },
+
+  "faq": {
+    "badge": "Questions & Answers",
+    "title": "Frequently Asked Questions",
+    "subtitle": "We answer your questions about the museum, organ donation, and Miika Foundation.",
+    "categories": [
+      {
+        "category": "About the Museum",
+        "questions": [
+          {
+            "q": "What is the museum admission fee?",
+            "a": "Access to DARte is free for educational purposes. Contact us for information about group tours or special events."
+          },
+          {
+            "q": "What are the opening hours?",
+            "a": "Monday to Friday: 9:00 AM - 6:00 PM | Saturdays: 10:00 AM - 4:00 PM | Sundays: Closed. For special events, contact us."
+          },
+          {
+            "q": "How do I get to the museum?",
+            "a": "We are located at Angela Peralta 35, Col. Periodista, Hermosillo, Sonora. We have parking and accessibility for people with disabilities."
+          },
+          {
+            "q": "Can I bring my school group?",
+            "a": "Yes, we offer special tours and educational programs for schools. Contact us in advance to organize your visit."
+          }
+        ]
+      },
+      {
+        "category": "About Donation",
+        "questions": [
+          {
+            "q": "At what age can you become a donor?",
+            "a": "You can register from age 18. However, minors can be donors with parental consent."
+          },
+          {
+            "q": "What are the types of donation?",
+            "a": "There are two types: organ donation (after death) and living donation (kidney or liver lobe)."
+          },
+          {
+            "q": "When does my registration expire?",
+            "a": "Your registration is valid for life, but you can revoke your decision at any time."
+          },
+          {
+            "q": "Does donating affect my funeral?",
+            "a": "No. The body is treated with the utmost respect during the donation process. Funeral arrangements are not affected."
+          },
+          {
+            "q": "If I'm a donor, will I receive the same medical care?",
+            "a": "Yes. Donors receive exactly the same quality of care as any other patient. Your decision is private."
+          }
+        ]
+      },
+      {
+        "category": "Miika Foundation",
+        "questions": [
+          {
+            "q": "How can Miika Foundation help my family?",
+            "a": "We offer comprehensive medical, psychological, and financial support during the transplant process. Contact us for a consultation."
+          },
+          {
+            "q": "What expenses does the Foundation cover?",
+            "a": "We cover medical costs, transportation, accommodation, and other expenses associated with transplantation not covered by health services."
+          },
+          {
+            "q": "How do I register with Miika Foundation?",
+            "a": "Call us at our contact number or visit our offices. We'll help you understand all the benefits available to you."
+          }
+        ]
+      },
+      {
+        "category": "Volunteering",
+        "questions": [
+          {
+            "q": "How can I volunteer at DARte?",
+            "a": "Contact us through the contact form. We are looking for people passionate about organ donation."
+          },
+          {
+            "q": "What requirements do I need to meet?",
+            "a": "You need to be over 18 years old, be enthusiastic, and have availability. We offer complete training."
+          },
+          {
+            "q": "Is the volunteering paid?",
+            "a": "Volunteering is an act of love and service. It is not paid, but it is invaluable to the community."
+          }
+        ]
+      }
+    ],
+    "helpTitle": "Didn't find your answer?",
+    "helpText": "Contact us directly. Our team is available to answer your specific questions.",
+    "helpContact": "Contact"
+  },
+
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Contact & Location",
+    "subtitle": "We're here to answer your questions and welcome your visit.",
+    "info": {
+      "location": "Location",
+      "locationItems": ["Angela Peralta 35", "Col. Periodista", "Hermosillo, Sonora, Mexico"],
+      "phone": "Phone",
+      "phoneItems": ["+52 (662) 123-4567", "Monday to Friday: 9am - 6pm"],
+      "email": "Email",
+      "emailItems": ["info@darte.mx", "Response within 24 hours"],
+      "hours": "Hours",
+      "hoursItems": ["Mon-Fri: 9:00am - 6:00pm", "Saturdays: 10:00am - 4:00pm", "Sundays: Closed"]
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectOptions": ["Select a subject", "Museum visit", "Educational program", "Donation", "Volunteering", "Other"],
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "successAlert": "Form submitted. We'll contact you soon!"
+    }
+  },
+
+  "footer": {
+    "darteDesc": "The only museum in the world dedicated to organ donation education. A space of hope, science, and transformation.",
+    "miikaDesc": "Donating Hope. Comprehensive medical, psychological, and financial support for patients and families in transplant processes.",
+    "contactTitle": "Contact",
+    "socialTitle": "Follow Us",
+    "copyright": "DARte - Donating Hope. All rights reserved.",
+    "mission": "One heart, one hope",
+    "aboutUs": "About Us",
+    "contact": "Contact"
+  },
+
+  "whatsapp": {
+    "message": "Hello DARte, I would like to get more information about the museum and organ donation.",
+    "title": "Contact via WhatsApp"
+  }
+}

@@ -1,8 +1,10 @@
-import { Heart, MapPin, Phone, Mail, Instagram, Facebook, Youtube } from 'lucide-react'
+import { Heart, MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useTranslation()
 
   return (
     <footer className="bg-[#3F8A4B] text-white">
@@ -19,7 +21,7 @@ export default function Footer() {
               <img src="/images/DARte.png" alt="DARte" className="h-12 w-auto rounded" />
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              El único museo en el mundo dedicado a la educación sobre donación de órganos. Un espacio de esperanza, ciencia y transformación.
+              {t('footer.darteDesc')}
             </p>
           </motion.div>
 
@@ -34,7 +36,7 @@ export default function Footer() {
               <img src="/images/fundacion Miika.png" alt="Fundación Miika" className="h-12 w-auto rounded" />
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              Donando Esperanzas. Apoyo integral médico, psicológico y económico para pacientes y familias en procesos de trasplante.
+              {t('footer.miikaDesc')}
             </p>
           </motion.div>
 
@@ -45,7 +47,7 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="font-semibold mb-4 text-[#EECA44]">Contacto</h4>
+            <h4 className="font-semibold mb-4 text-[#EECA44]">{t('footer.contactTitle')}</h4>
             <div className="space-y-3 text-sm text-white/80">
               <div className="flex gap-2 items-start">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-1 text-[#EECA44]" />
@@ -73,7 +75,7 @@ export default function Footer() {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="font-semibold mb-4 text-[#EECA44]">Síguenos</h4>
+            <h4 className="font-semibold mb-4 text-[#EECA44]">{t('footer.socialTitle')}</h4>
             <div className="space-y-4">
               {/* DARte Social */}
               <div>
@@ -147,7 +149,7 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <p className="text-sm text-white/80">
-                &copy; {currentYear} DARte - Donando Esperanzas. Todos los derechos reservados.
+                &copy; {currentYear} {t('footer.copyright')}
               </p>
             </motion.div>
 
@@ -161,7 +163,7 @@ export default function Footer() {
             >
               <div className="flex items-center justify-center gap-2 text-[#EECA44]">
                 <Heart className="w-4 h-4" />
-                <p className="text-sm font-semibold">Un corazón, una esperanza</p>
+                <p className="text-sm font-semibold">{t('footer.mission')}</p>
               </div>
             </motion.div>
 
@@ -174,11 +176,11 @@ export default function Footer() {
               viewport={{ once: true }}
             >
               <a href="#sobre" className="hover:text-[#EECA44] transition-colors">
-                Sobre Nosotros
+                {t('footer.aboutUs')}
               </a>
               <span className="text-white/40">|</span>
               <a href="#contacto" className="hover:text-[#EECA44] transition-colors">
-                Contacto
+                {t('footer.contact')}
               </a>
             </motion.div>
           </div>

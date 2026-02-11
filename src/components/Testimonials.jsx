@@ -1,51 +1,28 @@
 import { motion } from 'framer-motion'
 import { Star } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function Testimonials() {
-  const testimonials = [
-    {
-      name: 'María González',
-      role: 'Receptora de Trasplante',
-      content: 'Gracias a la donación de mi hermana, ahora tengo una segunda oportunidad de vida. DARte me ayudó a entender el proceso y a no estar sola en este camino.',
-      image: '👩‍🦰',
-      color: '#3F8A4B'
-    },
-    {
-      name: 'Carlos Rodríguez',
-      role: 'Familia Donante',
-      content: 'Cuando perdimos a nuestro padre, donó sus órganos. Saber que salvó varias vidas nos da consuelo. DARte nos ayudó a procesar este momento tan difícil.',
-      image: '👨‍💼',
-      color: '#EECA44'
-    },
-    {
-      name: 'Dr. Miguel Hernández',
-      role: 'Cirujano de Trasplantes',
-      content: 'DARte es revolucionario. Por primera vez tenemos un espacio que educa a la sociedad sobre la importancia crítica de la donación. ¡Es necesario!',
-      image: '👨‍⚕️',
-      color: '#CF423B'
-    },
-    {
-      name: 'Elena Martínez',
-      role: 'Visitante y Educadora',
-      content: 'Llevé a mis estudiantes a DARte. Quedaron impactados. Ahora varios se han registrado como donantes. El museo realmente cambia perspectivas.',
-      image: '👩‍🏫',
-      color: '#5F5FA2'
-    },
-    {
-      name: 'José Luis Gutiérrez',
-      role: 'Donante Vivo',
-      content: 'Doné uno de mis riñones. La experiencia fue diferente a lo que imaginaba. DARte ayuda a desmitificar la donación. Es un acto de amor real.',
-      image: '👨‍🦱',
-      color: '#3F8A4B'
-    },
-    {
-      name: 'Patricia Solis',
-      role: 'Voluntaria en DARte',
-      content: 'Trabajar aquí me ha transformado. Ver cómo el museo inspira a las personas a ser donantes es lo más gratificante que he experimentado.',
-      image: '👩‍💼',
-      color: '#EECA44'
-    }
+  const { t } = useTranslation()
+
+  const images = ['👩‍🦰', '👨‍💼', '👨‍⚕️', '👩‍🏫', '👨‍🦱', '👩‍💼']
+  const colors = ['#3F8A4B', '#EECA44', '#CF423B', '#5F5FA2', '#3F8A4B', '#EECA44']
+
+  const esotVideos = [
+    '/videos/ESOT_2025/efestratos-chatzixiros.mp4',
+    '/videos/ESOT_2025/mauricio-carvalho.mp4'
   ]
+  const esotColors = ['#3F8A4B', '#CF423B']
+
+  const wtcVideos = [
+    '/videos/WTC_2025/jim-rodrigue.mp4',
+    '/videos/WTC_2025/virginia-liuti.mp4'
+  ]
+  const wtcColors = ['#3F8A4B', '#EECA44']
+
+  const testimonialItems = t('testimonials.items', { returnObjects: true })
+  const esotSpeakers = t('testimonials.esotSpeakers', { returnObjects: true })
+  const wtcSpeakers = t('testimonials.wtcSpeakers', { returnObjects: true })
 
   return (
     <section id="testimonios" className="py-20 bg-white">
@@ -58,22 +35,22 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <span className="inline-block bg-[#3F8A4B]/10 text-[#3F8A4B] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#3F8A4B]/20">
-            Historias Reales
+            {t('testimonials.badge')}
           </span>
           <h2 className="section-title mb-4">
-            Testimonios que Inspiran
+            {t('testimonials.title')}
           </h2>
           <p className="section-subtitle">
-            Escucha las historias de personas cuyas vidas fueron transformadas por la donación de órganos.
+            {t('testimonials.subtitle')}
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {testimonialItems.map((testimonial, index) => (
             <motion.div
               key={index}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow border-t-4"
-              style={{ borderTopColor: testimonial.color }}
+              style={{ borderTopColor: colors[index] }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -83,7 +60,7 @@ export default function Testimonials() {
               {/* Stars */}
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-current" style={{ color: testimonial.color }} />
+                  <Star key={i} className="w-4 h-4 fill-current" style={{ color: colors[index] }} />
                 ))}
               </div>
 
@@ -94,7 +71,7 @@ export default function Testimonials() {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="text-4xl">{testimonial.image}</div>
+                <div className="text-4xl">{images[index]}</div>
                 <div>
                   <p className="font-bold text-[#5F5FA2]">{testimonial.name}</p>
                   <p className="text-sm text-gray-600">{testimonial.role}</p>
@@ -116,31 +93,18 @@ export default function Testimonials() {
           >
             <div className="text-center mb-12">
               <span className="inline-block bg-[#EECA44]/20 text-[#EECA44] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#EECA44]/40">
-                Congreso Europeo de Trasplantes
+                {t('testimonials.esotBadge')}
               </span>
               <h3 className="text-3xl font-display font-bold text-[#3F8A4B] mb-2">
-                ESOT 2025
+                {t('testimonials.esotTitle')}
               </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: 'Dr. Efestratos (Stratos) Chatzixiros',
-                  role: 'Director de Donación de Órganos de la Organización Mundial de la Salud',
-                  video: '/videos/ESOT_2025/efestratos-chatzixiros.mp4',
-                  color: '#3F8A4B'
-                },
-                {
-                  title: 'Mauricio Carvalho',
-                  role: 'Vicepresidente de Asuntos Médicos, Bridge To Life',
-                  video: '/videos/ESOT_2025/mauricio-carvalho.mp4',
-                  color: '#CF423B'
-                }
-              ].map((speaker, index) => (
+              {esotSpeakers.map((speaker, index) => (
                 <motion.div
                   key={index}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-t-4 flex flex-col"
-                  style={{ borderTopColor: speaker.color }}
+                  style={{ borderTopColor: esotColors[index] }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
@@ -152,8 +116,8 @@ export default function Testimonials() {
                     className="w-full bg-black flex-shrink-0"
                     style={{ aspectRatio: '9/16' }}
                   >
-                    <source src={speaker.video} type="video/mp4" />
-                    Tu navegador no soporta reproducción de videos.
+                    <source src={esotVideos[index]} type="video/mp4" />
+                    {t('testimonials.videoFallback')}
                   </video>
                   <div className="p-6">
                     <p className="font-bold text-[#5F5FA2] mb-1">{speaker.title}</p>
@@ -173,10 +137,10 @@ export default function Testimonials() {
           >
             <div className="text-center mb-12">
               <span className="inline-block bg-[#5F5FA2]/20 text-[#5F5FA2] px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-[#5F5FA2]/40">
-                Congreso Mundial de Trasplantes
+                {t('testimonials.wtcBadge')}
               </span>
               <h3 className="text-3xl font-display font-bold text-[#CF423B] mb-2">
-                WTC 2025
+                {t('testimonials.wtcTitle')}
               </h3>
             </div>
             <div className="space-y-8">
@@ -196,34 +160,21 @@ export default function Testimonials() {
                   style={{ aspectRatio: '16/9' }}
                 >
                   <source src="/videos/WTC_2025/mencion_DARte.mp4" type="video/mp4" />
-                  Tu navegador no soporta reproducción de videos.
+                  {t('testimonials.videoFallback')}
                 </video>
                 <div className="p-6">
-                  <p className="font-bold text-[#5F5FA2] mb-1">Ceremonia de Clausura - DARte</p>
-                  <p className="text-sm text-gray-600">Video donde se menciona a DARte en la ceremonia de clausura, como uno de los 25 trabajos mas innovadores presentados</p>
+                  <p className="font-bold text-[#5F5FA2] mb-1">{t('testimonials.wtcDarteTitle')}</p>
+                  <p className="text-sm text-gray-600">{t('testimonials.wtcDarteDesc')}</p>
                 </div>
               </motion.div>
 
               {/* Videos Verticales - Jim y Virginia */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                {[
-                  {
-                    title: 'Dr. Jim Rodrigue',
-                    role: 'Director de Investigación y Análisis de Datos, Servicio de Donación de Órganos y Tejidos de Nueva Inglaterra',
-                    video: '/videos/WTC_2025/jim-rodrigue.mp4',
-                    color: '#3F8A4B'
-                  },
-                  {
-                    title: 'Virginia Liuti',
-                    role: 'Asesora Internacional, Organ Recovery Systems',
-                    video: '/videos/WTC_2025/virginia-liuti.mp4',
-                    color: '#EECA44'
-                  }
-                ].map((speaker, index) => (
+                {wtcSpeakers.map((speaker, index) => (
                   <motion.div
                     key={index}
                     className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border-t-4 flex flex-col"
-                    style={{ borderTopColor: speaker.color }}
+                    style={{ borderTopColor: wtcColors[index] }}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: (index + 1) * 0.1 }}
@@ -235,8 +186,8 @@ export default function Testimonials() {
                       className="w-full bg-black flex-shrink-0"
                       style={{ aspectRatio: '9/16' }}
                     >
-                      <source src={speaker.video} type="video/mp4" />
-                      Tu navegador no soporta reproducción de videos.
+                      <source src={wtcVideos[index]} type="video/mp4" />
+                      {t('testimonials.videoFallback')}
                     </video>
                     <div className="p-6">
                       <p className="font-bold text-[#5F5FA2] mb-1">{speaker.title}</p>
@@ -258,13 +209,13 @@ export default function Testimonials() {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-4">
-            Tu Historia También Puede Inspirar
+            {t('testimonials.ctaTitle')}
           </h3>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            Si tienes una historia sobre donación de órganos que te gustaría compartir, contáctanos. Tu experiencia puede cambiar la vida de muchas personas.
+            {t('testimonials.ctaText')}
           </p>
           <a href="#contacto" className="btn-primary inline-block">
-            Comparte Tu Historia
+            {t('testimonials.ctaButton')}
           </a>
         </motion.div>
       </div>

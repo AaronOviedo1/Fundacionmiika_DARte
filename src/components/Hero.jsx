@@ -2,11 +2,14 @@ import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
+import { useTranslation } from 'react-i18next'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 export default function Hero() {
+  const { t } = useTranslation()
+
   const images = [
     '/images/darte-img02.jpg',
     '/images/darte-img03.jpg',
@@ -41,8 +44,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              DARte: El único museo dedicado
-              <span className="block">a la donación de órganos</span>
+              {t('hero.title1')}
+              <span className="block">{t('hero.title2')}</span>
             </motion.h1>
 
             <motion.p
@@ -51,7 +54,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Descubre un espacio educativo único donde la ciencia, la cultura y la esperanza se unen. Aprende sobre el impacto de la donación de órganos y cómo puedes salvar vidas.
+              {t('hero.subtitle')}
             </motion.p>
 
             <motion.div
@@ -61,7 +64,7 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
             >
               <a href="#contacto" className="btn-primary hidden md:flex items-center justify-center gap-2 group text-lg">
-                Visita el Museo
+                {t('hero.cta')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>
@@ -74,12 +77,12 @@ export default function Hero() {
               transition={{ delay: 0.6 }}
             >
               <div className="border-l-4 border-[#3F8A4B] pl-4">
-                <p className="text-3xl font-display font-bold text-[#3F8A4B]">1</p>
-                <p className="text-sm text-gray-700">Museo único en el mundo</p>
+                <p className="text-3xl font-display font-bold text-[#3F8A4B]">{t('hero.stat1Number')}</p>
+                <p className="text-sm text-gray-700">{t('hero.stat1Label')}</p>
               </div>
               <div className="border-l-4 border-[#EECA44] pl-4">
-                <p className="text-3xl font-display font-bold text-[#E8CC5D]">1000+</p>
-                <p className="text-sm text-gray-700">Vidas impactadas</p>
+                <p className="text-3xl font-display font-bold text-[#E8CC5D]">{t('hero.stat2Number')}</p>
+                <p className="text-sm text-gray-700">{t('hero.stat2Label')}</p>
               </div>
             </motion.div>
           </motion.div>
@@ -116,7 +119,7 @@ export default function Hero() {
                       <div className="h-full w-full flex items-center justify-center bg-gray-100">
                         <img
                           src={image}
-                          alt={`DARte Imagen ${index + 1}`}
+                          alt={`${t('hero.imageAlt')} ${index + 1}`}
                           className="h-full w-full object-cover"
                         />
                       </div>

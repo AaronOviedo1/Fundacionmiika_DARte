@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 import { MessageCircle } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 export default function WhatsAppButton() {
+  const { t } = useTranslation()
+
   const phoneNumber = '526621234567'
-  const message = 'Hola DARte, me gustaría obtener más información sobre el museo y la donación de órganos.'
+  const message = t('whatsapp.message')
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 
   return (
@@ -17,7 +20,7 @@ export default function WhatsAppButton() {
       transition={{ delay: 0.5 }}
       whileHover={{ scale: 1.1, backgroundColor: '#2d6a38' }}
       whileTap={{ scale: 0.95 }}
-      title="Contacto por WhatsApp"
+      title={t('whatsapp.title')}
     >
       <MessageCircle className="w-6 h-6" />
     </motion.a>
