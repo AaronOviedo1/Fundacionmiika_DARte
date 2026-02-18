@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .vite
+.env
 public/images/*.pdf.pdf
 
 # Editor directories and files

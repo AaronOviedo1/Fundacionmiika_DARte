@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Star } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
@@ -214,9 +215,9 @@ export default function Testimonials() {
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
             {t('testimonials.ctaText')}
           </p>
-          <a href="#contacto" className="btn-primary inline-block">
+          <Link to="/contacto" className="btn-primary inline-block">
             {t('testimonials.ctaButton')}
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

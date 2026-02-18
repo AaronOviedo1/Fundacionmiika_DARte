@@ -2,9 +2,13 @@
   "header": {
     "nav": {
       "inicio": "Home",
+      "nosotros": "About Us",
       "sobre": "About DARte",
       "miika": "Miika Foundation",
+      "recursos": "Resources",
       "estadisticas": "Statistics",
+      "porQue": "Why Visit?",
+      "innovacion": "Innovation",
       "testimonios": "Testimonials",
       "faq": "FAQ"
     },
@@ -37,11 +41,17 @@
     ],
     "locationLabel": "📍 Location",
     "locationAddress": "Angela Peralta 35, Col. Periodista, Hermosillo, Sonora, Mexico",
-    "pillars": {
-      "esperanza": "Hope",
-      "comunidad": "Community",
-      "educacion": "Education",
-      "medicina": "Medicine"
+    "mission": {
+      "title": "Mission",
+      "text": "To educate and raise awareness about organ donation, transforming lives through experiences that inspire solidarity and hope."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To be a global reference in organ donation education, driving a culture of donation in Mexico and Latin America."
+    },
+    "values": {
+      "title": "Values",
+      "text": "Empathy, solidarity, education, transparency, and commitment to every life we can impact."
     }
   },
 
@@ -69,27 +79,41 @@
   "statistics": {
     "badge": "Impactful Data",
     "title": "Donation Statistics in Mexico",
-    "subtitle": "Learn about the numbers that reflect the urgency and impact of organ donation in our country.",
+    "subtitle": "Learn about the monthly numbers that reflect the urgency and impact of organ donation in our country.",
     "stats": [
-      { "number": "17,000+", "label": "People on the waiting list in Mexico" },
-      { "number": "6,000+", "label": "Transplants performed annually" },
+      { "number": "~1,400", "label": "People join the waiting list each month" },
+      { "number": "~500", "label": "Transplants performed per month" },
       { "number": "1 in 4", "label": "Mexicans can be a donor" },
-      { "number": "1", "label": "Only museum in the world" }
+      { "number": "4.5", "label": "Donors per million inhabitants in Mexico" }
     ],
-    "importanceTitle": "Why is donation important?",
-    "importance": [
-      {
-        "title": "Saves Lives",
-        "description": "One donor can save up to 8 different lives through organ donation, while also improving the quality of life for other patients."
-      },
-      {
-        "title": "Second Chance",
-        "description": "Transplants offer a better quality of life compared to dialysis or other long-term treatments."
-      },
-      {
-        "title": "Lasting Legacy",
-        "description": "The decision to donate is an act of solidarity that impacts multiple families and communities for years."
-      }
+    "comparisonTitle": "Mexico vs. the World: Donation Rate",
+    "comparisonSubtitle": "Donors per million population (pmp). Mexico is far below the international average.",
+    "countries": [
+      { "name": "Spain", "flag": "🇪🇸", "rate": 46.3, "label": "46.3 pmp" },
+      { "name": "USA", "flag": "🇺🇸", "rate": 43.2, "label": "43.2 pmp" },
+      { "name": "Brazil", "flag": "🇧🇷", "rate": 18.1, "label": "18.1 pmp" },
+      { "name": "Argentina", "flag": "🇦🇷", "rate": 13.7, "label": "13.7 pmp" },
+      { "name": "Colombia", "flag": "🇨🇴", "rate": 8.8, "label": "8.8 pmp" },
+      { "name": "Mexico", "flag": "🇲🇽", "rate": 4.5, "label": "4.5 pmp", "highlight": true }
+    ],
+    "waitingListTitle": "The Urgency in Numbers",
+    "waitingListSubtitle": "The reality of the waiting list in Mexico according to CENATRA data.",
+    "waitingListStats": [
+      { "number": "1", "label": "Every 10 minutes, a person is added to the waiting list", "highlight": true },
+      { "number": "20", "label": "People die every day waiting for a transplant" },
+      { "number": "~20,000", "label": "People currently on the waiting list" },
+      { "number": "60%", "label": "Of patients die without receiving their transplant" }
+    ],
+    "diseasesTitle": "Common Diseases in Mexico",
+    "diseasesSubtitle": "Learn about the most prevalent diseases and which ones can lead to needing an organ transplant.",
+    "diseasesTransplantBadge": "May require transplant",
+    "diseases": [
+      { "name": "Diabetes Mellitus", "prevalence": "10.9% of adults", "deaths": "112,000+ deaths/year", "organ": "Kidney", "requiresTransplant": true },
+      { "name": "Heart Disease", "prevalence": "Leading cause of death", "deaths": "192,000+ deaths/year", "organ": "Heart", "requiresTransplant": true },
+      { "name": "Chronic Kidney Disease", "prevalence": "Diabetes comorbidity", "deaths": "17,352 deaths/year", "organ": "Kidney", "requiresTransplant": true },
+      { "name": "Liver Disease", "prevalence": "Cirrhosis and hepatitis", "deaths": "40,000+ deaths/year", "organ": "Liver", "requiresTransplant": true },
+      { "name": "Hypertension", "prevalence": "15.9% of adults", "deaths": "Cardiovascular risk factor", "organ": "", "requiresTransplant": false },
+      { "name": "Obesity", "prevalence": "36.9% of adults", "deaths": "Multiple risk factor", "organ": "", "requiresTransplant": false }
     ]
   },
 
@@ -228,17 +252,10 @@
         "cta": "Donate Now"
       }
     ],
-    "whyMattersTitle": "Why Every Action Matters",
-    "directAction": {
-      "title": "Direct Action",
-      "p1": "When you register as a donor, you directly contribute to the life-saving network. Every potential donor is a spark of hope for thousands of people on the waiting list.",
-      "p2": "Visiting the museum allows you to experience firsthand how donation transforms communities, and then you can share that experience with your network."
-    },
-    "systemicSupport": {
-      "title": "Systemic Support",
-      "p1": "Volunteers and donors allow us to expand our educational programs to more communities and schools.",
-      "p2": "Together, we create an awareness movement that changes the culture around organ donation in Mexico."
-    }
+    "namePlaceholder": "Your full name",
+    "registeredMessage": "Thank you for registering as a donor!",
+    "counterPrefix": "Through the DARte page we have registered a total of",
+    "counterSuffix": "donors."
   },
 
   "faq": {
@@ -302,10 +319,6 @@
           {
             "q": "What expenses does the Foundation cover?",
             "a": "We cover medical costs, transportation, accommodation, and other expenses associated with transplantation not covered by health services."
-          },
-          {
-            "q": "How do I register with Miika Foundation?",
-            "a": "Call us at our contact number or visit our offices. We'll help you understand all the benefits available to you."
           }
         ]
       },
@@ -315,14 +328,6 @@
           {
             "q": "How can I volunteer at DARte?",
             "a": "Contact us through the contact form. We are looking for people passionate about organ donation."
-          },
-          {
-            "q": "What requirements do I need to meet?",
-            "a": "You need to be over 18 years old, be enthusiastic, and have availability. We offer complete training."
-          },
-          {
-            "q": "Is the volunteering paid?",
-            "a": "Volunteering is an act of love and service. It is not paid, but it is invaluable to the community."
           }
         ]
       }
@@ -370,6 +375,21 @@
     "mission": "One heart, one hope",
     "aboutUs": "About Us",
     "contact": "Contact"
+  },
+
+  "innovation": {
+    "badge": "Innovation",
+    "title": "DARte in Virtual Reality",
+    "subtitle": "Bring the museum experience anywhere in the world with our virtual reality platform.",
+    "vrTitle": "LifePark VR: The Museum Without Borders",
+    "vrDescription": "We have developed an immersive virtual reality experience that allows you to explore the DARte museum from anywhere. An innovative educational tool that breaks geographical barriers and brings organ donation awareness to more people.",
+    "features": [
+      "Complete virtual tour through the museum halls",
+      "Immersive experience with interactive educational content",
+      "Accessible from virtual reality devices",
+      "Ideal for schools and communities without in-person access"
+    ],
+    "videoFallback": "Your browser does not support video playback."
   },
 
   "whatsapp": {

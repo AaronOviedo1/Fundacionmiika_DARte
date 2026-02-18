@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -95,9 +96,9 @@ export default function FAQ() {
             {t('faq.helpText')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contacto" className="btn-primary">
+            <Link to="/contacto" className="btn-primary">
               {t('faq.helpContact')}
-            </a>
+            </Link>
             <a href="https://wa.me/526621234567" target="_blank" rel="noopener noreferrer" className="btn-secondary">
               WhatsApp
             </a>

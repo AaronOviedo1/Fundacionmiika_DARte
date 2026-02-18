@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
@@ -63,10 +64,10 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <a href="#contacto" className="btn-primary hidden md:flex items-center justify-center gap-2 group text-lg">
+              <Link to="/contacto" className="btn-primary hidden md:flex items-center justify-center gap-2 group text-lg">
                 {t('hero.cta')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
 
             {/* Stats */}

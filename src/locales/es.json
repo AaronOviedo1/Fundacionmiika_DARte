@@ -2,9 +2,13 @@
   "header": {
     "nav": {
       "inicio": "Inicio",
+      "nosotros": "Nosotros",
       "sobre": "Sobre DARte",
       "miika": "Fundación Miika",
+      "recursos": "Recursos",
       "estadisticas": "Estadísticas",
+      "porQue": "¿Por qué visitar?",
+      "innovacion": "Innovación",
       "testimonios": "Testimonios",
       "faq": "FAQ"
     },
@@ -37,11 +41,17 @@
     ],
     "locationLabel": "📍 Ubicación",
     "locationAddress": "Angela Peralta 35, Col. Periodista, Hermosillo, Sonora, México",
-    "pillars": {
-      "esperanza": "Esperanza",
-      "comunidad": "Comunidad",
-      "educacion": "Educación",
-      "medicina": "Medicina"
+    "mission": {
+      "title": "Misión",
+      "text": "Educar y sensibilizar a la sociedad sobre la donación de órganos, transformando vidas a través de experiencias que inspiran solidaridad y esperanza."
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Ser un referente mundial en educación sobre donación de órganos, impulsando una cultura de donación en México y Latinoamérica."
+    },
+    "values": {
+      "title": "Valores",
+      "text": "Empatía, solidaridad, educación, transparencia y compromiso con cada vida que podemos impactar."
     }
   },
 
@@ -69,27 +79,41 @@
   "statistics": {
     "badge": "Datos Impactantes",
     "title": "Estadísticas de Donación en México",
-    "subtitle": "Conoce los números que reflejan la urgencia y el impacto de la donación de órganos en nuestro país.",
+    "subtitle": "Conoce los números mensuales que reflejan la urgencia y el impacto de la donación de órganos en nuestro país.",
     "stats": [
-      { "number": "17,000+", "label": "Personas en lista de espera en México" },
-      { "number": "6,000+", "label": "Trasplantes realizados anualmente" },
+      { "number": "~1,400", "label": "Personas se suman a la lista de espera cada mes" },
+      { "number": "~500", "label": "Trasplantes realizados al mes" },
       { "number": "1 de 4", "label": "Mexicanos puede ser donante" },
-      { "number": "1", "label": "Único museo en el mundo" }
+      { "number": "4.5", "label": "Donantes por millón de habitantes en México" }
     ],
-    "importanceTitle": "¿Por qué es importante la donación?",
-    "importance": [
-      {
-        "title": "Salva Vidas",
-        "description": "Un donante puede salvar hasta 8 vidas diferentes mediante donación de órganos, además de mejorar la calidad de vida de otros pacientes."
-      },
-      {
-        "title": "Segundo Chance",
-        "description": "Los trasplantes ofrecen una mejor calidad de vida comparado con la diálisis u otros tratamientos de largo plazo."
-      },
-      {
-        "title": "Legado Duradero",
-        "description": "La decisión de donar es un acto de solidaridad que impacta a múltiples familias y comunidades por años."
-      }
+    "comparisonTitle": "México vs. el Mundo: Tasa de Donación",
+    "comparisonSubtitle": "Donantes por millón de habitantes (pmp). México está muy por debajo del promedio internacional.",
+    "countries": [
+      { "name": "España", "flag": "🇪🇸", "rate": 46.3, "label": "46.3 pmp" },
+      { "name": "EE.UU.", "flag": "🇺🇸", "rate": 43.2, "label": "43.2 pmp" },
+      { "name": "Brasil", "flag": "🇧🇷", "rate": 18.1, "label": "18.1 pmp" },
+      { "name": "Argentina", "flag": "🇦🇷", "rate": 13.7, "label": "13.7 pmp" },
+      { "name": "Colombia", "flag": "🇨🇴", "rate": 8.8, "label": "8.8 pmp" },
+      { "name": "México", "flag": "🇲🇽", "rate": 4.5, "label": "4.5 pmp", "highlight": true }
+    ],
+    "waitingListTitle": "La Urgencia en Números",
+    "waitingListSubtitle": "La realidad de la lista de espera en México según datos del CENATRA.",
+    "waitingListStats": [
+      { "number": "1", "label": "Cada 10 minutos, una persona se suma a la lista de espera", "highlight": true },
+      { "number": "20", "label": "Personas mueren al día esperando un trasplante" },
+      { "number": "~20,000", "label": "Personas en lista de espera actualmente" },
+      { "number": "60%", "label": "De los pacientes fallecen sin recibir su trasplante" }
+    ],
+    "diseasesTitle": "Enfermedades Comunes en México",
+    "diseasesSubtitle": "Conoce las enfermedades más prevalentes y cuáles pueden llevar a necesitar un trasplante de órgano.",
+    "diseasesTransplantBadge": "Puede requerir trasplante",
+    "diseases": [
+      { "name": "Diabetes Mellitus", "prevalence": "10.9% de adultos", "deaths": "112,000+ muertes/año", "organ": "Riñón", "requiresTransplant": true },
+      { "name": "Enfermedades del Corazón", "prevalence": "Principal causa de muerte", "deaths": "192,000+ muertes/año", "organ": "Corazón", "requiresTransplant": true },
+      { "name": "Insuficiencia Renal Crónica", "prevalence": "Comorbilidad de diabetes", "deaths": "17,352 muertes/año", "organ": "Riñón", "requiresTransplant": true },
+      { "name": "Enfermedades Hepáticas", "prevalence": "Cirrosis y hepatitis", "deaths": "40,000+ muertes/año", "organ": "Hígado", "requiresTransplant": true },
+      { "name": "Hipertensión Arterial", "prevalence": "15.9% de adultos", "deaths": "Factor de riesgo cardiovascular", "organ": "", "requiresTransplant": false },
+      { "name": "Obesidad", "prevalence": "36.9% de adultos", "deaths": "Factor de riesgo múltiple", "organ": "", "requiresTransplant": false }
     ]
   },
 
@@ -228,17 +252,10 @@
         "cta": "Donar Ahora"
       }
     ],
-    "whyMattersTitle": "Por qué Cada Acción Importa",
-    "directAction": {
-      "title": "Acción Directa",
-      "p1": "Cuando te registras como donante, contribuyes directamente a la red de salvamento de vidas. Cada donante potencial es una chispa de esperanza para miles de personas en lista de espera.",
-      "p2": "Visitar el museo te permite experimentar de primera mano cómo la donación transforma comunidades, y después puedes compartir esa experiencia con tu red."
-    },
-    "systemicSupport": {
-      "title": "Apoyo Sistémico",
-      "p1": "Los voluntarios y donantes nos permiten expandir nuestros programas educativos a más comunidades y escuelas.",
-      "p2": "Juntos, creamos un movimiento de conciencia que cambia la cultura alrededor de la donación de órganos en México."
-    }
+    "namePlaceholder": "Tu nombre completo",
+    "registeredMessage": "¡Gracias por registrarte como donante!",
+    "counterPrefix": "Mediante la página DARte hemos conseguido un total de",
+    "counterSuffix": "donantes."
   },
 
   "faq": {
@@ -302,10 +319,6 @@
           {
             "q": "¿Cuáles son los gastos que cubre la Fundación?",
             "a": "Cubrimos costos médicos, transporte, alojamiento y otros gastos asociados al trasplante que no sean cubiertos por servicios de salud."
-          },
-          {
-            "q": "¿Cómo me registro con Fundación Miika?",
-            "a": "Llámanos al número de contacto o visita nuestras oficinas. Te ayudaremos a entender todos los beneficios disponibles para ti."
           }
         ]
       },
@@ -315,14 +328,6 @@
           {
             "q": "¿Cómo me puedo hacer voluntario en DARte?",
             "a": "Contáctanos a través del formulario de contacto. Estamos buscando personas apasionadas por la donación de órganos."
-          },
-          {
-            "q": "¿Qué requisitos tengo que cumplir?",
-            "a": "Necesitas ser mayor de 18 años, tener entusiasmo y disponibilidad. Ofrecemos capacitación completa."
-          },
-          {
-            "q": "¿Es remunerado el voluntariado?",
-            "a": "El voluntariado es un acto de amor y servicio. No es remunerado, pero sí invaluable para la comunidad."
           }
         ]
       }
@@ -370,6 +375,21 @@
     "mission": "Un corazón, una esperanza",
     "aboutUs": "Sobre Nosotros",
     "contact": "Contacto"
+  },
+
+  "innovation": {
+    "badge": "Innovación",
+    "title": "DARte en Realidad Virtual",
+    "subtitle": "Lleva la experiencia del museo a cualquier parte del mundo con nuestra plataforma de realidad virtual.",
+    "vrTitle": "LifePark VR: El Museo Sin Fronteras",
+    "vrDescription": "Hemos desarrollado una experiencia inmersiva en realidad virtual que permite explorar el museo DARte desde cualquier lugar. Una herramienta educativa innovadora que rompe las barreras geográficas y acerca la donación de órganos a más personas.",
+    "features": [
+      "Recorrido virtual completo por las salas del museo",
+      "Experiencia inmersiva con contenido educativo interactivo",
+      "Accesible desde dispositivos de realidad virtual",
+      "Ideal para escuelas y comunidades sin acceso presencial"
+    ],
+    "videoFallback": "Tu navegador no soporta reproducción de videos."
   },
 
   "whatsapp": {

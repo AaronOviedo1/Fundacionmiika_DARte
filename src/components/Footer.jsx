@@ -1,4 +1,5 @@
 import { Heart, MapPin, Phone, Mail, Instagram, Facebook } from 'lucide-react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
@@ -175,13 +176,13 @@ export default function Footer() {
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <a href="#sobre" className="hover:text-[#EECA44] transition-colors">
+              <Link to="/" className="hover:text-[#EECA44] transition-colors">
                 {t('footer.aboutUs')}
-              </a>
+              </Link>
               <span className="text-white/40">|</span>
-              <a href="#contacto" className="hover:text-[#EECA44] transition-colors">
+              <Link to="/contacto" className="hover:text-[#EECA44] transition-colors">
                 {t('footer.contact')}
-              </a>
+              </Link>
             </motion.div>
           </div>
         </div>

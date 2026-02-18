@@ -1,13 +1,21 @@
 import { motion } from 'framer-motion'
-import { Users, Heart, TrendingUp, Award } from 'lucide-react'
+import { Users, Heart, TrendingUp, BarChart3, Clock, Skull, ListOrdered, AlertTriangle, Activity } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export default function Statistics() {
   const { t } = useTranslation()
 
-  const icons = [Users, Heart, TrendingUp, Award]
+  const icons = [Users, Heart, TrendingUp, BarChart3]
   const colors = ['#3F8A4B', '#CF423B', '#EECA44', '#5F5FA2']
   const statsData = t('statistics.stats', { returnObjects: true })
+  const countries = t('statistics.countries', { returnObjects: true })
+  const waitingListStats = t('statistics.waitingListStats', { returnObjects: true })
+  const diseases = t('statistics.diseases', { returnObjects: true })
+
+  const maxRate = Math.max(...countries.map(c => c.rate))
+
+  const waitingIcons = [Clock, Skull, ListOrdered, AlertTriangle]
+  const waitingColors = ['#CF423B', '#5F5FA2', '#EECA44', '#3F8A4B']
 
   return (
     <section id="estadisticas" className="py-20 bg-white">
@@ -45,7 +53,6 @@ export default function Statistics() {
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                {/* Background animation */}
                 <motion.div
                   className="absolute inset-0 bg-white/10"
                   animate={{ opacity: [0.1, 0.2, 0.1] }}
@@ -64,7 +71,118 @@ export default function Statistics() {
           })}
         </div>
 
-        {/* Additional Info */}
+        {/* Waiting List Urgency */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-display font-bold text-[#CF423B] mb-2 text-center">
+            {t('statistics.waitingListTitle')}
+          </h3>
+          <p className="text-gray-600 mb-8 text-center">
+            {t('statistics.waitingListSubtitle')}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {waitingListStats.map((stat, index) => {
+              const Icon = waitingIcons[index]
+              const color = waitingColors[index]
+              return (
+                <motion.div
+                  key={index}
+                  className={`rounded-2xl p-6 text-center border-2 ${
+                    stat.highlight
+                      ? 'bg-[#CF423B]/5 border-[#CF423B]'
+                      : 'bg-white border-gray-200'
+                  }`}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                >
+                  <div className="inline-block p-3 rounded-lg mb-4" style={{ backgroundColor: `${color}20` }}>
+                    <Icon className="w-6 h-6" style={{ color }} />
+                  </div>
+                  <p className="text-4xl font-display font-bold mb-2" style={{ color }}>
+                    {stat.number}
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed">{stat.label}</p>
+                </motion.div>
+              )
+            })}
+          </div>
+        </motion.div>
+
+        {/* Common Diseases */}
+        <motion.div
+          className="mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="text-2xl font-display font-bold text-[#5F5FA2] mb-2 text-center">
+            {t('statistics.diseasesTitle')}
+          </h3>
+          <p className="text-gray-600 mb-8 text-center">
+            {t('statistics.diseasesSubtitle')}
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {diseases.map((disease, index) => (
+              <motion.div
+                key={index}
+                className={`rounded-2xl p-6 border-2 transition-all ${
+                  disease.requiresTransplant
+                    ? 'bg-[#CF423B]/5 border-[#CF423B]/30'
+                    : 'bg-gray-50 border-gray-200'
+                }`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="inline-block p-2 rounded-lg" style={{
+                    backgroundColor: disease.requiresTransplant ? '#CF423B20' : '#5F5FA220'
+                  }}>
+                    <Activity className="w-5 h-5" style={{
+                      color: disease.requiresTransplant ? '#CF423B' : '#5F5FA2'
+                    }} />
+                  </div>
+                  {disease.requiresTransplant && (
+                    <span className="text-xs font-semibold bg-[#CF423B] text-white px-2 py-1 rounded-full">
+                      {t('statistics.diseasesTransplantBadge')}
+                    </span>
+                  )}
+                </div>
+
+                <h4 className={`text-lg font-bold mb-2 ${
+                  disease.requiresTransplant ? 'text-[#CF423B]' : 'text-[#5F5FA2]'
+                }`}>
+                  {disease.name}
+                </h4>
+
+                <div className="space-y-1 text-sm text-gray-600">
+                  <p>{disease.prevalence}</p>
+                  <p className="font-semibold text-gray-800">{disease.deaths}</p>
+                  {disease.requiresTransplant && disease.organ && (
+                    <p className="text-[#CF423B] font-semibold mt-2">
+                      → {disease.organ}
+                    </p>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Country Comparison */}
         <motion.div
           className="bg-gradient-to-r from-[#3F8A4B]/10 to-[#5F5FA2]/10 rounded-2xl p-8 border border-[#3F8A4B]/20"
           initial={{ opacity: 0, y: 20 }}
@@ -72,20 +190,45 @@ export default function Statistics() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-6">
-            {t('statistics.importanceTitle')}
+          <h3 className="text-2xl font-display font-bold text-[#3F8A4B] mb-2">
+            {t('statistics.comparisonTitle')}
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {(t('statistics.importance', { returnObjects: true })).map((item, index) => (
+          <p className="text-gray-600 mb-8">
+            {t('statistics.comparisonSubtitle')}
+          </p>
+          <div className="space-y-4">
+            {countries.map((country, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                className="flex items-center gap-4"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <h4 className="text-lg font-bold text-[#5F5FA2] mb-3">{item.title}</h4>
-                <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                <div className="w-28 sm:w-36 flex items-center gap-2 shrink-0">
+                  <span className="text-xl">{country.flag}</span>
+                  <span className={`text-sm font-semibold ${country.highlight ? 'text-[#CF423B]' : 'text-gray-700'}`}>
+                    {country.name}
+                  </span>
+                </div>
+                <div className="flex-1 bg-gray-200 rounded-full h-8 overflow-hidden">
+                  <motion.div
+                    className={`h-full rounded-full flex items-center justify-end pr-3 ${
+                      country.highlight
+                        ? 'bg-[#CF423B]'
+                        : 'bg-[#3F8A4B]'
+                    }`}
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${(country.rate / maxRate) * 100}%` }}
+                    transition={{ duration: 0.8, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className="text-white text-xs font-bold whitespace-nowrap">
+                      {country.label}
+                    </span>
+                  </motion.div>
+                </div>
               </motion.div>
             ))}
           </div>
